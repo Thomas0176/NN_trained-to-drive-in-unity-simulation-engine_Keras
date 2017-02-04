@@ -150,7 +150,7 @@ model.add(Dense(10))
 model.add(Dense(1))
 
 model.summary()
-model.compile(loss='mse', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='mse', optimizer='adam', metrics=['loss'])
 
 
 # In[41]:
