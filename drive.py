@@ -42,7 +42,7 @@ def telemetry(sid, data):
     #image = np.asarray(Image.open(train_data_folder+train_images_filenames[index-1]).convert('RGB'))
 
     image_array = image_array.astype('float32')
-    image_array = image_array/255-0.5    
+    # image_array = image_array/255-0.5    
 
 
     transformed_image_array = image_array[None, :, :, :]
@@ -83,8 +83,8 @@ if __name__ == '__main__':
         #
         # instead.
         #old line model = model_from_json(jfile.read())
-        model = model_from_json(jfile.read())
-        #model = model_from_json(json.loads(jfile.read()))
+       	model = model_from_json(jfile.read())
+	#model = model_from_json(json.loads(jfile.read()))
 
 
 
